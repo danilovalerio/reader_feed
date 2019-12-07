@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity(), Callback {
             Item(it.title, it.author, it.date, it.source, it.enclosure.url)
         }
 
-        adapter = ItemAdapter(listItens, this)
         adapter.notifyDataSetChanged()
     }
 
