@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagem"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Título"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:stretchColumns="0,2"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tabrow_autor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Autor"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimary" />
+
+<!--                divisor-->
+                <View android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:id="@+id/tabrow_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Data Publicação"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimary" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:text="Ver mais"/>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
